@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="box">
+    <input type="hidden" id="pageid" value="2">
+    <div class="tabnav">
+        <ul class="clearfix">
+            <li class="col-xs-3"><a href="@Url.Action("Organization")">组织架构</a></li>
+            <li class="col-xs-3"><a href="@Url.Action("Qualification")">企业资质</a></li>
+            <li class="col-xs-3"><a href="@Url.Action("HonoraryAward")">荣誉奖项</a></li>
+
+        </ul>
+    </div>
+    <div class="singlebox clearfix">
+        <div class="aboutright">
+            <div class="qyll">
+                <div class="singletitle">企业理念</div>
+                <ul>
+
+                    <li>
+                        <h3>我们的愿景</h3>
+                        <p>成为中国城市建设领域领先的、以工程设计为核心、提供全流程设计咨询服务的高科技、创新型企业。</p>
+                    </li>
+
+                    <li>
+                        <h3>我们的使命</h3>
+                        <p>构想城市未来 · 创造宜居空间</p>
+                    </li>
+
+                    <li>
+                        <h3>我们的价值观</h3>
+                        <p>创新 · 激情 · 坚持 · 分享</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="singletitle">发展历程</div>
+            <div class="aboutscroll">
+                <ul id="slides">
+
+                    <li style="z-index: 9; display: block; opacity: 0.356738;">
+                        <a href="javascript:;">
+                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213020817932_small.jpg" width="346" height="258">
+                            <div class="sildcon">
+                                <h2 class="ellipsis">1984</h2>
+                                <p class="ellipsis">成都饭店</p>
+                                <p class="ellipsis">成都市第一座高层建筑</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li style="z-index: 8; display: block;">
+                        <a href="javascript:;">
+                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213114249383_small.jpg" width="346" height="258">
+                            <div class="sildcon">
+                                <h2 class="ellipsis">1983</h2>
+                                <p class="ellipsis">成都百货大楼</p>
+                                <p class="ellipsis">设计采用了省内最早的喷水灭火系统</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li style="z-index: 9; display: none;">
+                        <a href="javascript:;">
+                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213114405101_small.jpg" width="346" height="258">
+                            <div class="sildcon">
+                                <h2 class="ellipsis">1987</h2>
+                                <p class="ellipsis">成都市人民政府</p>
+                                <p class="ellipsis"></p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li style="z-index: 9; display: none;">
+                        <a href="javascript:;">
+                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213114553233_small.jpg" width="346" height="258">
+                            <div class="sildcon">
+                                <h2 class="ellipsis">1995</h2>
+                                <p class="ellipsis">王府井百货</p>
+                                <p class="ellipsis">成都第一座超高层建筑</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li style="z-index: 9; display: none;">
+                        <a href="javascript:;">
+                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_201512131145090_small.jpg" width="346" height="258">
+                            <div class="sildcon">
+                                <h2 class="ellipsis">1996</h2>
+                                <p class="ellipsis">天府丽都喜来登饭店</p>
+                                <p class="ellipsis">成都最早的五星级涉外酒店之一</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul><div id="pagination"><div class="pbox"><div class="plist"><span class="">1</span><span class="current">2</span><span class="">3</span><span class="">4</span><span class="">5</span></div></div></div>
+            </div>
+            <div class="aboutcon">
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿@using Dawu.Site.Database
+@using Dawu.Site.Database.Entities
+@using Microsoft.Extensions.Primitives
+@model IEnumerable<Dawu.Site.Database.Entities.ArticleEntity>
+
+@functions {
+    public List<ArticleEntity> TopArticles { get; set; }
+    public List<ArticleEntity> NormalArticles { get; set; }
+    public int TotalCount { get; set; }
+    public int CurPage { get; set; }
+    public int MaxPage { get; set; }
+}
+@inject DawuDbContext DbContext
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //TopArticles = this.DbContext.AritcleEntitySet.Where(x=>x.IsTopArticle).ToList();
+    Context.Request.Query.TryGetValue("page", out StringValues page);
+    CurPage = int.Parse(page[0]);
+    //NormalArticles = this.DbContext.AritcleEntitySet.Skip(CurPage*20).Take(20).ToList();
+    //TotalCount = this.DbContext.AritcleEntitySet.Count();
+    MaxPage = this.TotalCount / 20;
+}
+
+<div class="box">
+    <input type="hidden" id="pageid" value="1">
+    <div class="tabnav">
+        <ul class="clearfix">
+
+            <li class="col-xs-6 first active"><a href="/news/list-1.html">企业新闻</a></li>
+
+            <li class="col-xs-6"><a href="/news/list-2.html">职工风采</a></li>
+
+        </ul>
+    </div>
+    <div class="newsbox">
+        <div class="news-scroll" style=" display: ">
+            <ul id="slides">
+                @foreach (var article in this.TopArticles)
+    {
+        <li style="z-index: 8; display: block;">
+            <a href="@Html.ActionLink("News", "Detail", new { id=article.Id })">
+                <div class="fl">
+                    <img src="@article.CoverImage" width="500" height="300">
+                </div>
+                <div class="newsintro">
+                    <h2 class="ellipsis-2">我院召开喜迎党的十九大召开相关工作的会议</h2>
+                    <p class="time">@article.PublishTime.ToString("yyyy-MM-dd")</p>
+                    <div class="sumry ellipsis-4">
+                        @article.Description
+                    </div>
+                </div>
+            </a>
+        </li>
+    }
+                
+
+            </ul><div id="pagination"><div class="pbox"><div class="plist"><span class="current">1</span><span class="">2</span></div></div></div>
+        </div>
+        <div class="newslist">
+            <ul>
+                @for (var i = 0; i < this.NormalArticles.Count; i++)
+                {
+                    var article = this.NormalArticles[i];
+                    if (i%2 == 0)
+                    {
+                <li><a href="@Url.Action("Detail",new {id = article.Id})"><span>@article.PublishTime.ToString("yyyy-MM-dd")</span>@article.Title</a></li>
+                    }
+                    else
+                    {
+                        <li class="db"><a href="@Url.Action("Detail",new {id = article.Id})"><span>@article.PublishTime.ToString("yyyy-MM-dd")</span>@article.Title</a></li>
+                    }
+                }
+                    
+            </ul>
+                    
+        </div>
+        <div class="pagebox">
+            <div id="ctl00_Main_AspNetPager1" style="width: 100%;">
+                <a href="@(this.CurPage == 0 ? "#" : Url.Action("Index", new {page = this.CurPage - 1}))" style="margin-right: 5px;">&lt; 上一页</a>
+                @{
+                    for (int i = 0; i < MaxPage; i++)
+                    {
+                        if (i == CurPage)
+                        {
+                            <span class="currue" style="margin-right: 5px;">@CurPage</span>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Index", new {page = i})" style="margin-right: 5px;">@(i + 1)</a>
+                        }
+                    }
+                }
+                @*<span class="currue" style="margin-right: 5px;">1</span>
+                <a href="/news/list-1-2.html" style="margin-right: 5px;">2</a>
+                <a href="/news/list-1-3.html" style="margin-right: 5px;">3</a>
+                <a href="/news/list-1-4.html" style="margin-right: 5px;">4</a>*@
+                <a href="@(this.CurPage == MaxPage ? "#" : Url.Action("Index", new {page = this.CurPage}))" style="margin-right: 5px;">下一页 &gt;</a>
+            </div>
+        </div>
+    </div>
+</div>
