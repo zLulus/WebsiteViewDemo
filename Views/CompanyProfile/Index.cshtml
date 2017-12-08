@@ -1,105 +1,346 @@
-﻿@{
-    ViewData["Title"] = "View";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-<div class="box">
-    <input type="hidden" id="pageid" value="2">
-    <div class="tabnav">
-        <ul class="clearfix">
-            <li class="col-xs-3"><a href="@Url.Action("Organization")">组织架构</a></li>
-            <li class="col-xs-3"><a href="@Url.Action("Qualification")">企业资质</a></li>
-            <li class="col-xs-3"><a href="@Url.Action("HonoraryAward")">荣誉奖项</a></li>
-
-        </ul>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://www.cdadri.com/about.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        CDAD概况- 企业简介-成都市建筑设计研究院 CDAD
+    </title>
+    <link href="~/css/companyProfile/style.css" rel="stylesheet" type="text/css">
+    <meta name="keywords" content="成都市建筑设计研究院,CDAD">
+    <meta name="description" content="成都市建筑设计研究院（以下简称CDAD）始建于1959年，前身为成都市设计院，1991年6月正式更名为“成都市建筑设计研究院”">
+    <meta name="Copyright" content="成都市建筑设计研究院">
+</head>
+<body style="">
+    <div class="header">
+        <a href="http://www.cdadri.com/" class="logo" title="成都市建筑设计研究院"></a>
     </div>
-    <div class="singlebox clearfix">
-        <div class="aboutright">
-            <div class="qyll">
-                <div class="singletitle">企业理念</div>
-                <ul>
+    <div class="wrapper" id="pagemain">
 
-                    <li>
-                        <h3>我们的愿景</h3>
-                        <p>成为中国城市建设领域领先的、以工程设计为核心、提供全流程设计咨询服务的高科技、创新型企业。</p>
-                    </li>
-
-                    <li>
-                        <h3>我们的使命</h3>
-                        <p>构想城市未来 · 创造宜居空间</p>
-                    </li>
-
-                    <li>
-                        <h3>我们的价值观</h3>
-                        <p>创新 · 激情 · 坚持 · 分享</p>
-                    </li>
+        <div class="box">
+            <input type="hidden" id="pageid" value="2">
+            <div class="tabnav">
+                <ul class="clearfix">
+                    <li class="col-xs-3 first active"><a href="/CompanyProfile/Index">企业简介</a></li>
+                    <li class="col-xs-3"><a href="/CompanyProfile/Organization">组织架构</a></li>
+                    <li class="col-xs-3"><a href="/CompanyProfile/Qualification">企业资质</a></li>
+                    <li class="col-xs-3"><a href="/CompanyProfile/HonoraryAward">荣誉奖项</a></li>
 
                 </ul>
             </div>
-            <div class="singletitle">发展历程</div>
-            <div class="aboutscroll">
-                <ul id="slides">
+            <div class="singlebox clearfix">
+                <div class="aboutleft">
+                    <div class="singletitle">CDAD概况</div>
+                    <div class="aboutcon">
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp;成都市建筑设计研究院（以下简称<span>CDAD</span>）始建于<span>1959</span>年，是成都市政府直属事业单位。前身为“成都市设计院”，<span>1991</span>年<span>6</span>月正式更名为“成都市建筑设计研究院”。
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            <img alt="" src="~/images/companyProfile/20151212185032_6324.jpg">
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            CDAD拥有国家建筑行业（建筑工程）甲级、城乡规划编制甲级、风景园林工程设计专项甲级、市政行业乙级、建筑装饰装修工程设计与施工贰级、工程咨询丙级、工程项目管理丙级等资质。同时获得了GB/T 19001-2008质量管理体系认证、GB/T 24001-2004环境管理体系认证和GB/T 28001-2011职业健康安全管理体系认证。
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; CDAD设计队伍实力雄厚，技术精良，管理科学，社会赞誉广泛。全院现有员工540余人，其中拥有省级勘察设计大师、享受政府特殊津贴专家、成都市突出贡献专家共计7人；教授级高级工程师13人；高级建筑师及高级工程师77人；国家一级注册建筑师、一级注册结构工程师、注册城市规划师、注册电气工程师和公用设备工程师等各类注册人员68余人。&nbsp;<br>
+                            <br>
+                            CDAD运用现代企业管理方式，致力于探索推进“转型升级、再创业”的变革之路。运用科学化、信息化思维和手段转变管理模式和管理手段，大力提升核心服务能力。重点建设我院方案创作团队及创作能力，形成了工程咨询、城市规划、建筑工程设计、市政工程设计、景观设计、环境艺术设计、施工图审查、工程总承包八大业务版块。<br>
+                            &nbsp;<br>
+                            半个多世纪以来，CDAD为国内外数千项工程建设项目提供了规划、设计、咨询、施工等服务，覆盖了办公建筑、商业建筑、医疗建筑、体育建筑、居住建筑、教育建筑、工业园区及城市规划、市政工程设计以及各类规划研究、总体规划、详细规划、城市设计等。先后获国家级、省（部）级、市级优秀设计和科研成果奖200多项，承担四川省、成都市建设主管部门主持编制的技术标准、规程及导则三十余项。同时在“5.12汶川特大地震”和“4.20芦山大地震”灾后重建、成都市二环路改造工程、财富论坛城市风貌更新、天府新区创新中心、成都天府国际机场配套工程项目等四川省、成都市政府重大建设工作中，充分发挥了骨干技术力量的作用。工程设计代表作品成都市文化宫工人剧场、攀钢大厦、成都市档案馆、天府丽都喜来登饭店、成都市娇子音乐厅、成都石室中学逸夫楼、什邡中学综合科技大楼、成都大学新建校园图书馆、广安市图书馆、成都市公安局应急联动指挥中心、成都市青少年科技园、科技馆、四川音乐学院教学综合楼、花水湾名人温泉酒店、成都市南部新区起步区和平小学（成都七中小学部）、成都市国家综合档案馆（EPC）、石家庄档案馆新馆建设项目、莱蒙置地广场、西藏日喀则医院、成都天府新区创新中心（EPC）等项目深受社会各界的赞誉。<br>
+                            &nbsp;<br>
+                            在新的历史时期，CDAD将坚持“创新、激情、坚持、分享”的核心价值观，秉承“构想城市未来，创造宜居空间”的使命，不断增强核心竞争力，为实现“成为中国城市建设领域领先的，以工程设计为核心的，提供全流程设计咨询服务的高科技、创新型企业”愿景而不懈努力。
+                        </p>
+                        <p>
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutright">
+                    <div class="qyll">
+                        <div class="singletitle">企业理念</div>
+                        <ul>
 
-                    <li style="z-index: 9; display: block; opacity: 0.356738;">
-                        <a href="javascript:;">
-                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213020817932_small.jpg" width="346" height="258">
-                            <div class="sildcon">
-                                <h2 class="ellipsis">1984</h2>
-                                <p class="ellipsis">成都饭店</p>
-                                <p class="ellipsis">成都市第一座高层建筑</p>
-                            </div>
-                        </a>
-                    </li>
+                            <li>
+                                <h3>我们的愿景</h3>
+                                <p>成为中国城市建设领域领先的、以工程设计为核心、提供全流程设计咨询服务的高科技、创新型企业。</p>
+                            </li>
 
-                    <li style="z-index: 8; display: block;">
-                        <a href="javascript:;">
-                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213114249383_small.jpg" width="346" height="258">
-                            <div class="sildcon">
-                                <h2 class="ellipsis">1983</h2>
-                                <p class="ellipsis">成都百货大楼</p>
-                                <p class="ellipsis">设计采用了省内最早的喷水灭火系统</p>
-                            </div>
-                        </a>
-                    </li>
+                            <li>
+                                <h3>我们的使命</h3>
+                                <p>构想城市未来 · 创造宜居空间</p>
+                            </li>
 
-                    <li style="z-index: 9; display: none;">
-                        <a href="javascript:;">
-                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213114405101_small.jpg" width="346" height="258">
-                            <div class="sildcon">
-                                <h2 class="ellipsis">1987</h2>
-                                <p class="ellipsis">成都市人民政府</p>
-                                <p class="ellipsis"></p>
-                            </div>
-                        </a>
-                    </li>
+                            <li>
+                                <h3>我们的价值观</h3>
+                                <p>创新 · 激情 · 坚持 · 分享</p>
+                            </li>
 
-                    <li style="z-index: 9; display: none;">
-                        <a href="javascript:;">
-                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_20151213114553233_small.jpg" width="346" height="258">
-                            <div class="sildcon">
-                                <h2 class="ellipsis">1995</h2>
-                                <p class="ellipsis">王府井百货</p>
-                                <p class="ellipsis">成都第一座超高层建筑</p>
-                            </div>
-                        </a>
-                    </li>
+                        </ul>
+                    </div>
+                    <div class="singletitle">发展历程</div>
+                    <div class="aboutscroll">
+                        <ul id="slides">
 
-                    <li style="z-index: 9; display: none;">
-                        <a href="javascript:;">
-                            <img src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/fzlc_201512131145090_small.jpg" width="346" height="258">
-                            <div class="sildcon">
-                                <h2 class="ellipsis">1996</h2>
-                                <p class="ellipsis">天府丽都喜来登饭店</p>
-                                <p class="ellipsis">成都最早的五星级涉外酒店之一</p>
-                            </div>
-                        </a>
-                    </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213020817932_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1984</h2>
+                                        <p class="ellipsis">成都饭店</p>
+                                        <p class="ellipsis">成都市第一座高层建筑</p>
+                                    </div>
+                                </a>
+                            </li>
 
-                </ul><div id="pagination"><div class="pbox"><div class="plist"><span class="">1</span><span class="current">2</span><span class="">3</span><span class="">4</span><span class="">5</span></div></div></div>
-            </div>
-            <div class="aboutcon">
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213114249383_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1983</h2>
+                                        <p class="ellipsis">成都百货大楼</p>
+                                        <p class="ellipsis">设计采用了省内最早的喷水灭火系统</p>
+                                    </div>
+                                </a>
+                            </li>
 
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213114405101_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1987</h2>
+                                        <p class="ellipsis">成都市人民政府</p>
+                                        <p class="ellipsis"></p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213114553233_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1995</h2>
+                                        <p class="ellipsis">王府井百货</p>
+                                        <p class="ellipsis">成都第一座超高层建筑</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_201512131145090_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1996</h2>
+                                        <p class="ellipsis">天府丽都喜来登饭店</p>
+                                        <p class="ellipsis">成都最早的五星级涉外酒店之一</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul><div id="pagination"><div class="pbox"><div class="plist"><span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span></div></div></div>
+                    </div>
+                    <div class="aboutcon">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="footer">
+        <div class="wrapper">
+            <p>
+                <span class="fr">蜀ICP备17038600号</span>
+                成都市建筑设计研究院  版权所有
+            </p>
+            <p class="cright">
+                <span class="fr"><a href="http://www.mekabrand.com/" class="mk" target="_blank"></a></span>
+                Copyright © www.cdadri.com All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/jquery.js.下载"></script>
+    <script type="text/javascript" src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/common.js.下载"></script>
+
+    <script type="text/javascript" src="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/jquery.jslides.js.下载"></script>
+
+</body>
+</html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://www.cdadri.com/about.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        CDAD概况- 企业简介-成都市建筑设计研究院 CDAD
+    </title>
+    <link href="./CDAD概况- 企业简介-成都市建筑设计研究院 CDAD_files/style.css" rel="stylesheet" type="text/css">
+    <meta name="keywords" content="成都市建筑设计研究院,CDAD">
+    <meta name="description" content="成都市建筑设计研究院（以下简称CDAD）始建于1959年，前身为成都市设计院，1991年6月正式更名为“成都市建筑设计研究院”">
+    <meta name="Copyright" content="成都市建筑设计研究院">
+</head>
+<body style="">
+    <div class="header">
+        <a href="http://www.cdadri.com/" class="logo" title="成都市建筑设计研究院"></a>
+    </div>
+    <div class="wrapper" id="pagemain">
+
+        <div class="box">
+            <input type="hidden" id="pageid" value="2">
+            <div class="tabnav">
+                <ul class="clearfix">
+                    <li class="col-xs-3 first active"><a href="http://www.cdadri.com/about.html">企业简介</a></li>
+                    <li class="col-xs-3"><a href="http://www.cdadri.com/zzjg.html">组织架构</a></li>
+                    <li class="col-xs-3"><a href="http://www.cdadri.com/honor.html">企业资质</a></li>
+                    <li class="col-xs-3"><a href="http://www.cdadri.com/award.html">荣誉奖项</a></li>
+
+                </ul>
+            </div>
+            <div class="singlebox clearfix">
+                <div class="aboutleft">
+                    <div class="singletitle">CDAD概况</div>
+                    <div class="aboutcon">
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp;成都市建筑设计研究院（以下简称<span>CDAD</span>）始建于<span>1959</span>年，是成都市政府直属事业单位。前身为“成都市设计院”，<span>1991</span>年<span>6</span>月正式更名为“成都市建筑设计研究院”。
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            <img alt="" src="~/images/companyProfile/20151212185032_6324.jpg">
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            CDAD拥有国家建筑行业（建筑工程）甲级、城乡规划编制甲级、风景园林工程设计专项甲级、市政行业乙级、建筑装饰装修工程设计与施工贰级、工程咨询丙级、工程项目管理丙级等资质。同时获得了GB/T 19001-2008质量管理体系认证、GB/T 24001-2004环境管理体系认证和GB/T 28001-2011职业健康安全管理体系认证。
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; CDAD设计队伍实力雄厚，技术精良，管理科学，社会赞誉广泛。全院现有员工540余人，其中拥有省级勘察设计大师、享受政府特殊津贴专家、成都市突出贡献专家共计7人；教授级高级工程师13人；高级建筑师及高级工程师77人；国家一级注册建筑师、一级注册结构工程师、注册城市规划师、注册电气工程师和公用设备工程师等各类注册人员68余人。&nbsp;<br>
+                            <br>
+                            CDAD运用现代企业管理方式，致力于探索推进“转型升级、再创业”的变革之路。运用科学化、信息化思维和手段转变管理模式和管理手段，大力提升核心服务能力。重点建设我院方案创作团队及创作能力，形成了工程咨询、城市规划、建筑工程设计、市政工程设计、景观设计、环境艺术设计、施工图审查、工程总承包八大业务版块。<br>
+                            &nbsp;<br>
+                            半个多世纪以来，CDAD为国内外数千项工程建设项目提供了规划、设计、咨询、施工等服务，覆盖了办公建筑、商业建筑、医疗建筑、体育建筑、居住建筑、教育建筑、工业园区及城市规划、市政工程设计以及各类规划研究、总体规划、详细规划、城市设计等。先后获国家级、省（部）级、市级优秀设计和科研成果奖200多项，承担四川省、成都市建设主管部门主持编制的技术标准、规程及导则三十余项。同时在“5.12汶川特大地震”和“4.20芦山大地震”灾后重建、成都市二环路改造工程、财富论坛城市风貌更新、天府新区创新中心、成都天府国际机场配套工程项目等四川省、成都市政府重大建设工作中，充分发挥了骨干技术力量的作用。工程设计代表作品成都市文化宫工人剧场、攀钢大厦、成都市档案馆、天府丽都喜来登饭店、成都市娇子音乐厅、成都石室中学逸夫楼、什邡中学综合科技大楼、成都大学新建校园图书馆、广安市图书馆、成都市公安局应急联动指挥中心、成都市青少年科技园、科技馆、四川音乐学院教学综合楼、花水湾名人温泉酒店、成都市南部新区起步区和平小学（成都七中小学部）、成都市国家综合档案馆（EPC）、石家庄档案馆新馆建设项目、莱蒙置地广场、西藏日喀则医院、成都天府新区创新中心（EPC）等项目深受社会各界的赞誉。<br>
+                            &nbsp;<br>
+                            在新的历史时期，CDAD将坚持“创新、激情、坚持、分享”的核心价值观，秉承“构想城市未来，创造宜居空间”的使命，不断增强核心竞争力，为实现“成为中国城市建设领域领先的，以工程设计为核心的，提供全流程设计咨询服务的高科技、创新型企业”愿景而不懈努力。
+                        </p>
+                        <p>
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutright">
+                    <div class="qyll">
+                        <div class="singletitle">企业理念</div>
+                        <ul>
+
+                            <li>
+                                <h3>我们的愿景</h3>
+                                <p>成为中国城市建设领域领先的、以工程设计为核心、提供全流程设计咨询服务的高科技、创新型企业。</p>
+                            </li>
+
+                            <li>
+                                <h3>我们的使命</h3>
+                                <p>构想城市未来 · 创造宜居空间</p>
+                            </li>
+
+                            <li>
+                                <h3>我们的价值观</h3>
+                                <p>创新 · 激情 · 坚持 · 分享</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="singletitle">发展历程</div>
+                    <div class="aboutscroll">
+                        <ul id="slides">
+
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213020817932_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1984</h2>
+                                        <p class="ellipsis">成都饭店</p>
+                                        <p class="ellipsis">成都市第一座高层建筑</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213114249383_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1983</h2>
+                                        <p class="ellipsis">成都百货大楼</p>
+                                        <p class="ellipsis">设计采用了省内最早的喷水灭火系统</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213114405101_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1987</h2>
+                                        <p class="ellipsis">成都市人民政府</p>
+                                        <p class="ellipsis"></p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_20151213114553233_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1995</h2>
+                                        <p class="ellipsis">王府井百货</p>
+                                        <p class="ellipsis">成都第一座超高层建筑</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="javascript:;">
+                                    <img src="~/images/companyProfile/fzlc_201512131145090_small.jpg" width="346" height="258">
+                                    <div class="sildcon">
+                                        <h2 class="ellipsis">1996</h2>
+                                        <p class="ellipsis">天府丽都喜来登饭店</p>
+                                        <p class="ellipsis">成都最早的五星级涉外酒店之一</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul><div id="pagination"><div class="pbox"><div class="plist"><span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span></div></div></div>
+                    </div>
+                    <div class="aboutcon">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <p>
+                <span class="fr">蜀ICP备17038600号</span>
+                成都市建筑设计研究院  版权所有
+            </p>
+            <p class="cright">
+                <span class="fr"><a href="http://www.mekabrand.com/" class="mk" target="_blank"></a></span>
+                Copyright © www.cdadri.com All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
