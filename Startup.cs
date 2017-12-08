@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace WebsiteViewDemo
 {
@@ -36,6 +40,21 @@ namespace WebsiteViewDemo
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            //读取Views文件夹下的js和css
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+                        Path.Combine(Directory.GetCurrentDirectory(), @"Views")),
+                RequestPath = new PathString("/Views"),
+                ContentTypeProvider = new FileExtensionContentTypeProvider(
+                            new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+                            {
+                    { ".js", "application/javascript" },
+                    { ".css", "text/css" },
+                            })
+            }
+            );
 
             app.UseStaticFiles();
 

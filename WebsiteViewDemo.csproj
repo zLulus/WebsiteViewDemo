@@ -12,4 +12,28 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\index\index.css" />
+    <None Include="wwwroot\images\index\20170904074907735.jpg" />
+    <None Include="wwwroot\images\index\20170926042811891.jpg" />
+    <None Include="wwwroot\images\index\20171027023128603.jpg" />
+    <None Include="wwwroot\images\index\about-1.jpg" />
+    <None Include="wwwroot\images\index\about-2.jpg" />
+    <None Include="wwwroot\images\index\cxyf.png" />
+    <None Include="wwwroot\images\index\ewm.jpg" />
+    <None Include="wwwroot\images\index\fzjg.png" />
+    <None Include="wwwroot\images\index\gczcb.png" />
+    <None Include="wwwroot\images\index\index-navbg.png" />
+    <None Include="wwwroot\images\index\logo-home.png" />
+    <None Include="wwwroot\images\index\scyx.png" />
+    <None Include="wwwroot\images\index\sjzx.jpg" />
+    <None Include="wwwroot\images\index\team.jpg" />
+    <None Include="wwwroot\images\index\yjzs.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Home\Index\" />
+    <Folder Include="wwwroot\js\index\" />
+  </ItemGroup>
+
 </Project>

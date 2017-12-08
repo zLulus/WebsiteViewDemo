@@ -1,0 +1,103 @@
+body { padding:0; margin:0;font-family:"Microsoft Yahei","微软雅黑";font-size: 14px;color:#303030; min-width:1200px;height:100%; min-height:656px; background:#fff;position:relative; } 
+html{font-family: "Microsoft Yahei","微软雅黑";}
+:focus{outline: 0;} 
+*{ margin:0;padding:0;}
+img{border:0; display:inline-block;}
+ul,ol,li{ list-style:none}
+a {color:#303030;text-decoration: none;cursor:pointer;}
+a:hover {color:#e61016;text-decoration: none;}
+.clr{clear:both;}
+em{font-style:normal;}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+* html .clearfix{zoom:1;}
+*:first-child + html .clearfix{zoom:1;}
+.none{ display: none;}
+.ellipsis{overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.ellipsis-2{display: -webkit-box;overflow: hidden; white-space: normal !important;text-overflow: ellipsis;word-wrap: break-word; -webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.ellipsis-5{display: -webkit-box;overflow: hidden; white-space: normal !important;text-overflow: ellipsis;word-wrap: break-word; -webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+.bannerbox{ position: absolute; left:0; top:0; right:0; bottom:0; z-index:1;background-image: url('../images/indexbg.jpg');background-position: 50% 50%;background-size: cover;}
+.footer{ position: absolute; width:100%; height:64px; width:1200px; left:50%; margin-left:-600px; line-height:64px; bottom:17px; z-index:2}
+.footer .wrapper{ width:1200px; margin:0 auto;}
+.containner{ position: absolute; left:0; top:0; bottom:81px; right:0; z-index:3;}
+.pagemain{ position:absolute; width:1200px; height:575px; left:50%; top:50%; margin:-288px 0 0 -600px;}
+.logo{ height:49px; margin-bottom:66px; overflow:hidden}
+.box{ width:100%; height:460px; overflow:hidden; color: #FFFFFF;}
+.boxleft{ 
+    float:left; width:135px; 
+    background:url(/test/a/img/index-navbg.png) repeat; 
+    height:460px;}
+.boxright{ float:right; width:1000px; padding-right:63px;height:460px; position: relative;}
+.close-right{ display: none; position: absolute; right:53px; top: 10px; z-index: 9; width: 76px; height: 28px; line-height: 28px; background: #e61016; color: #FFFFFF; text-align: center; cursor: pointer;}
+.close-right span{ display: inline-block; height: 28px; padding-right: 16px; padding-left: 6px; background: url(../images/icon/arrow-l-white.png) right center no-repeat;}
+.contentpanel{ display: none; padding: 31px 42px 31px 36px; height: 398px; overflow: hidden; background: url(../images/index-mainbg.png) repeat;}
+.mainbox{ display: none; width: 100%; height: 398px; overflow: hidden;}
+.mainbox.active,.contentpanel.active,.close-right.active{ display: block;}
+.curtitle{ height: 55px; line-height: 55px; margin-bottom: 4px; font-size: 30px; color: #e61016;}
+.aboutintro{ height:110px; overflow: hidden; line-height: 22px; font-size: 12px; margin-bottom: 10px;}
+.aboutmenu{ float: left; width: 190px; padding-top: 14px;}
+.aboutmenu li{ height: 40px; line-height: 40px;}
+.aboutmenu li.dd{ float:left; width:190px; height:40px;overflow: hidden;}
+.aboutmenu li a{ display: inline-block; padding-right:20px; color: #FFFFFF; background: url(../images/icon/arrow-r-red.png) right 13px no-repeat;}
+.aboutmenu li a:hover{ color: #e61016;}
+.aboutimg{ float:right; width:718px;}
+.aboutimg img{ float: left; border: 1px solid #303030; margin-left: 10px;}
+.aboutmenu.dd{ width:380px}
+.aboutimg.dd{ width:520px}
+.aboutcenterimg img{}
+
+.navlist{ padding-top: /*31px*/ 15px; padding-left: 10px;}
+.navlist li{position: relative;margin-bottom: 8px; width: 100%; height: 32px; line-height: 32px; text-align: right;}
+.navlist li a{ display: block; padding-right: 45px; width: 90px; height: 32px; position: absolute; left: 0; top: 0; z-index: 1; color: #FFFFFF; cursor: pointer;}
+.navlist li:hover a{ color: #e61016;}
+.navlist li.active a{ background:#e61016; color: #FFFFFF;}
+
+#slides{display:block;width:100%; height:100%;position:relative}
+#slides li{ display:block;width:100%; height:100%;list-style:none; padding:0; margin:0; left:0; top:0; position:absolute; text-align:left;background-position: 50% 50%;background-size: cover;}
+#slides li img{width:100%; height:100%;}
+#slides li a{ display:block;width:100%; height:100%;}
+#pagination{position:absolute; right:50px; bottom:30px;height:17px;z-index:99;text-align:right;}
+#pagination span{display: inline-block;width:17px; height:17px; line-height:17px; overflow:hidden;margin:0 3px;cursor:pointer; text-align:center; color:#FFF; font:normal 12px/17px "微软雅黑"; background:#FFF;border-radius: 50%; /*border:2px solid #FFFFFF;*/ }
+#pagination span a{ color:#F4CE01; display:block; width:100%; height:100%;}
+#pagination span.current{ background:#e61016; color:#e61016;}
+
+
+.fl{ float:left}
+.fr{ float:right}
+.newsabout{ height:22px; line-height:22px; overflow:hidden; padding-right:270px; position: relative}
+.newsabout .newsnav{ position:absolute; right:0; top:0; line-height:22px;}
+.newsabout .newsnav li{ float:left; display:inline-block; margin-left:25px; height: 22px; line-height: 22px;}
+.newsabout .newsnav li a{ display: inline-block; padding-right:20px; color: #FFFFFF; background: url(../images/icon/arrow-r-red.png) right center no-repeat;}
+.newsabout .newsnav li a:hover{ color: #e61016;}
+
+.news-scroll{width:100%;height: 300px;margin-top:20px; position: relative;}
+.news-scroll #slides_news{display:block;width:100%; height:100%;position:relative}
+.news-scroll #slides_news li{ display:block;width:100%; height:100%;list-style:none; padding:0; margin:0; left:0; top:0; position:absolute; text-align:left; background-position:center top; background-repeat:no-repeat;}
+.news-scroll #slides_news li img{width:500px; height:300px;}
+.news-scroll #slides_news li a{ display:block;width:100%; height:100%;}
+.news-scroll #pagination_news{position:absolute; left:530px; bottom:24px; right: 0; height:10px; padding-top: 4px; line-height:10px;z-index:99;text-align:left; overflow: hidden;}
+.news-scroll #pagination_news span{display: inline-block;width:10px; height:10px; line-height:10px; overflow:hidden;margin-right:16px;cursor:pointer; text-align:center; color:#C8C8C8;background:#C8C8C8;border-radius: 50%;}
+.news-scroll #pagination_news span a{ color:#c8c8c8; display:block; width:100%; height:100%;}
+.news-scroll #pagination_news span.current{ background:#e61016; color:#e61016;}
+.news-scroll .newsintro{ float: left; margin-left: 30px; margin-top: 20px; width: 382px; line-height: 26px; height: 213px; overflow: hidden;}
+.news-scroll .newsintro h2{ font-weight: normal; line-height: 32px; font-size: 18px; overflow: hidden; color:#ffffff}
+.news-scroll .newsintro p.time{ margin-bottom: 10px; height: 35px; line-height: 35px; color: #666;}
+.news-scroll .newsintro .sumry{ height: 104px; overflow: hidden; color:#ffffff}
+
+.contactbox{ padding-top:15px; padding-right:240px; position:relative}
+.contactintro{ line-height:26px; overflow:hidden;}
+.contactintro h3{ font-size:16px; font-weight:normal; line-height:22px;}
+.contactintro h4{ font-size:14px; font-weight:normal; line-height:32px;}
+.contactintro .intro{ line-height:27px; margin-top:25px}
+.contactbox .weixin{ position: absolute; top: 15px; right: 50px; width: 131px; padding: 34px; text-align: center; border: 1px solid #DCDCDC; background: #FFFFFF; color:#303030}
+.contactbox .weixin img{ width: 131px; height: 131px; margin-bottom: 14px;}
+.contactbox .weixin p{ height: 24px; line-height: 24px; font-size: 16px;}
+
+
+.teambox{}
+.teambox .aboutintro{ height:66px; overflow:hidden}
+.teambox .teamnav { margin-top:22px; margin-bottom:27px;}
+.teambox .teamnav li{ float:left; display:inline-block; margin-right:25px; height: 22px; line-height: 22px;}
+.teambox .teamnav li a{ display: inline-block; padding-right:20px; color: #FFFFFF; background: url(../images/icon/arrow-r-red.png) right center no-repeat;}
+.teambox .teamnav li a:hover{ color: #e61016;}
+.teambox .teamnlist{ height:184px; overflow: hidden}
+.teambox .teamnlist img{ float:left; width:70px; height:92px}
