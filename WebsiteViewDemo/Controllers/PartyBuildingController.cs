@@ -11,7 +11,11 @@ namespace Dawu.Site.Controllers
     /// </summary>
     public class PartyBuildingController : Controller
     {
-        public IActionResult Index()
+        /// <summary>
+        /// 三个页面共用一套UI，换内容而已
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Index(int type)
         {
             return View();
         }
