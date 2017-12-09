@@ -17,15 +17,6 @@ namespace Dawu.Site.Controllers
         }
 
         /// <summary>
-        /// 组织架构
-        /// </summary>
-        /// <returns></returns>
-        public IActionResult Organization()
-        {
-            return View();
-        }
-
-        /// <summary>
         /// 企业资质
         /// </summary>
         /// <returns></returns>

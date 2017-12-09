@@ -15,21 +15,39 @@ em{font-style:normal;}
 .ellipsis{overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
 .ellipsis-2{display: -webkit-box;overflow: hidden; white-space: normal !important;text-overflow: ellipsis;word-wrap: break-word; -webkit-line-clamp: 2;-webkit-box-orient: vertical;}
 .ellipsis-5{display: -webkit-box;overflow: hidden; white-space: normal !important;text-overflow: ellipsis;word-wrap: break-word; -webkit-line-clamp: 4;-webkit-box-orient: vertical;}
-.bannerbox{ position: absolute; left:0; top:0; right:0; bottom:0; z-index:1;background-image: url('../images/indexbg.jpg');background-position: 50% 50%;background-size: cover;}
+.bannerbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url('../../images/home/indexbg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
 .footer{ position: absolute; width:100%; height:64px; width:1200px; left:50%; margin-left:-600px; line-height:64px; bottom:17px; z-index:2}
 .footer .wrapper{ width:1200px; margin:0 auto;}
 .containner{ position: absolute; left:0; top:0; bottom:81px; right:0; z-index:3;}
 .pagemain{ position:absolute; width:1200px; height:575px; left:50%; top:50%; margin:-288px 0 0 -600px;}
 .logo{ height:49px; margin-bottom:66px; overflow:hidden}
 .box{ width:100%; height:460px; overflow:hidden; color: #FFFFFF;}
-.boxleft{ 
-    float:left; width:135px; 
-    background:url(/test/a/img/index-navbg.png) repeat; 
-    height:460px;}
+.boxleft {
+    float: left;
+    width: 135px;
+    background: url(../../images/home/index-navbg.png) repeat;
+    height: 460px;
+}
 .boxright{ float:right; width:1000px; padding-right:63px;height:460px; position: relative;}
 .close-right{ display: none; position: absolute; right:53px; top: 10px; z-index: 9; width: 76px; height: 28px; line-height: 28px; background: #e61016; color: #FFFFFF; text-align: center; cursor: pointer;}
-.close-right span{ display: inline-block; height: 28px; padding-right: 16px; padding-left: 6px; background: url(../images/icon/arrow-l-white.png) right center no-repeat;}
-.contentpanel{ display: none; padding: 31px 42px 31px 36px; height: 398px; overflow: hidden; background: url(../images/index-mainbg.png) repeat;}
+.close-right span{ display: inline-block; height: 28px; padding-right: 16px; padding-left: 6px; background: url(../../images/home/arrow-l-white.png) right center no-repeat;}
+.contentpanel {
+    display: none;
+    padding: 31px 42px 31px 36px;
+    height: 398px;
+    overflow: hidden;
+    background: url(../../images/home/index-mainbg.png) repeat;
+}
 .mainbox{ display: none; width: 100%; height: 398px; overflow: hidden;}
 .mainbox.active,.contentpanel.active,.close-right.active{ display: block;}
 .curtitle{ height: 55px; line-height: 55px; margin-bottom: 4px; font-size: 30px; color: #e61016;}
@@ -37,7 +55,12 @@ em{font-style:normal;}
 .aboutmenu{ float: left; width: 190px; padding-top: 14px;}
 .aboutmenu li{ height: 40px; line-height: 40px;}
 .aboutmenu li.dd{ float:left; width:190px; height:40px;overflow: hidden;}
-.aboutmenu li a{ display: inline-block; padding-right:20px; color: #FFFFFF; background: url(../images/icon/arrow-r-red.png) right 13px no-repeat;}
+    .aboutmenu li a {
+        display: inline-block;
+        padding-right: 20px;
+        color: #FFFFFF;
+        background: url(../../images/home/arrow-r-red.png) right 13px no-repeat;
+    }
 .aboutmenu li a:hover{ color: #e61016;}
 .aboutimg{ float:right; width:718px;}
 .aboutimg img{ float: left; border: 1px solid #303030; margin-left: 10px;}
@@ -66,7 +89,12 @@ em{font-style:normal;}
 .newsabout{ height:22px; line-height:22px; overflow:hidden; padding-right:270px; position: relative}
 .newsabout .newsnav{ position:absolute; right:0; top:0; line-height:22px;}
 .newsabout .newsnav li{ float:left; display:inline-block; margin-left:25px; height: 22px; line-height: 22px;}
-.newsabout .newsnav li a{ display: inline-block; padding-right:20px; color: #FFFFFF; background: url(../images/icon/arrow-r-red.png) right center no-repeat;}
+    .newsabout .newsnav li a {
+        display: inline-block;
+        padding-right: 20px;
+        color: #FFFFFF;
+        background: url(../../images/home/arrow-r-red.png) right center no-repeat;
+    }
 .newsabout .newsnav li a:hover{ color: #e61016;}
 
 .news-scroll{width:100%;height: 300px;margin-top:20px; position: relative;}
@@ -97,7 +125,12 @@ em{font-style:normal;}
 .teambox .aboutintro{ height:66px; overflow:hidden}
 .teambox .teamnav { margin-top:22px; margin-bottom:27px;}
 .teambox .teamnav li{ float:left; display:inline-block; margin-right:25px; height: 22px; line-height: 22px;}
-.teambox .teamnav li a{ display: inline-block; padding-right:20px; color: #FFFFFF; background: url(../images/icon/arrow-r-red.png) right center no-repeat;}
+    .teambox .teamnav li a {
+        display: inline-block;
+        padding-right: 20px;
+        color: #FFFFFF;
+        background: url(../../images/home/arrow-r-red.png) right center no-repeat;
+    }
 .teambox .teamnav li a:hover{ color: #e61016;}
 .teambox .teamnlist{ height:184px; overflow: hidden}
 .teambox .teamnlist img{ float:left; width:70px; height:92px}

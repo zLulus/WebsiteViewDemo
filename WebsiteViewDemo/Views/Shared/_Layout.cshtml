@@ -14,20 +14,34 @@
     <div class="header">
         <a href="/" class="logo" title="成都市建筑设计研究院"></a>
     </div>
-    <div class="wrapper" id="pagemain">
-        <div class="navlist">
-            <ul id="mainnav">
-                <li class="active"><a href="@Url.Action("Index","Home")">网站首页</a></li>
-                <li><a href="@Url.Action("Index", "News")">新闻资讯</a></li>
-                <li><a href="@Url.Action("Index", "CompanyProfile")">企业概况</a></li>
-                <li><a href="@Url.Action("Index", "AchievementShow")">成果展示</a></li>
-                <li><a href="@Url.Action("Index", "PartyBuilding")">党团建设</a></li>
-                <li><a href="@Url.Action("Index", "Recruitment")">人才招聘</a></li>
-                <li><a href="@Url.Action("Index", "Contact")">联系我们</a></li>
-            </ul>
-        </div>
-        @RenderBody()
+<div class="wrapper" id="pagemain">
+    <div class="navlist">
+        <ul id="mainnav">
+            <li class="active"><a href="@Url.Action("Index","Home")">网站首页</a></li>
+            <li><a href="@Url.Action("Index", "News")">新闻资讯</a></li>
+            <li><a href="@Url.Action("Index", "CompanyProfile")">企业概况</a></li>
+            <li><a href="@Url.Action("Index", "AchievementShow")">成果展示</a></li>
+            <li><a href="@Url.Action("Index", "PartyBuilding")">党团建设</a></li>
+            <li><a href="@Url.Action("Index", "Recruitment")">人才招聘</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">联系我们</a></li>
+        </ul>
     </div>
+    @RenderBody()
+        
+</div>
+    <!--页脚-->
+<div class="footer">
+    <div class="wrapper">
+        <p>
+            <span class="fr">蜀ICP备17038600号</span>
+            成都市建筑设计研究院  版权所有
+        </p>
+        <p class="cright">
+            <span class="fr"><a href="http://www.mekabrand.com/" class="mk" target="_blank"></a></span>
+            Copyright © www.cdadri.com All Rights Reserved.
+        </p>
+    </div>
+</div>
     @RenderSection("Scripts", required: false)
     
     <script type="text/javascript" src="~/js/common/jquery.js"></script>
