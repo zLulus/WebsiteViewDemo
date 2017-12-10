@@ -1,5 +1,6 @@
 $(function(){
-	$('a').bind('focus', function () { if (this.blur) { this.blur() }; }); // 去除a标签点击时的外部虚线
+    $('a').bind('focus', function () { if (this.blur) { this.blur() }; }); // 去除a标签点击时的外部虚线
+    //用来tab切换
     var pid = $("#pageid").val();
     $("#mainnav li").eq(pid).addClass("active");	
 	
