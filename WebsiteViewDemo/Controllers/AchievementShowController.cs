@@ -15,5 +15,13 @@ namespace Dawu.Site.Controllers
         {
             return View();
         }
+        /// <summary>
+        /// 详情页（悬浮窗）
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Detail()
+        {
+            return View();
+        }
     }
 }

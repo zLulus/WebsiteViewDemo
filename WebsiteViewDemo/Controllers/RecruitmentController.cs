@@ -15,5 +15,14 @@ namespace Dawu.Site.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// 详情页
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Detail()
+        {
+            return View();
+        }
     }
 }

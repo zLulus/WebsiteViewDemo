@@ -29,6 +29,11 @@ namespace Dawu.Site.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 详情页
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public IActionResult Detail(int id)
         {
             return View();

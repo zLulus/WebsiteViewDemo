@@ -85,11 +85,18 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 	display: none;
 }
 
-#TB_closeWindow{
-	height:25px;
-	/*padding:11px 25px 10px 0;
+#TB_closeWindow {
+    height: 25px;
+    /*padding:11px 25px 10px 0;
 	float:right;*/
-	 position: absolute; z-index: 999; right: 17px; top: 16px; width: 25px; background: url(../images/close.png) no-repeat; cursor: pointer; overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    right: 17px;
+    top: 16px;
+    width: 25px;
+    background: url(../../images/companyProfile/close.png) no-repeat;
+    cursor: pointer;
+    overflow: hidden;
 }
 #TB_closeWindowButton{ width: 25px; height: 25px; display: block;  line-height:1000px;overflow: hidden; line-height: 1000px;}
 
