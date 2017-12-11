@@ -19,7 +19,7 @@ namespace Dawu.Site.Controllers
         /// 详情页（悬浮窗）
         /// </summary>
         /// <returns></returns>
-        public IActionResult Detail()
+        public IActionResult Detail(long id)
         {
             return View();
         }

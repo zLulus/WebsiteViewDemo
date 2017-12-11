@@ -43,7 +43,9 @@ em{font-style:normal;}
 #openwin{background: transparent;height: auto;margin: 0 auto;width: 1200px;}
 #openwin .boxes {background: #FFF;border: 1px solid #FFFFFF; height: 500px; position: relative;}
 #openwin .close {position:absolute; right:20px; top:20px; z-index: 999999; width: 25px; height: 25px; cursor: pointer;display: block;color: #FFF;font: 20px/32px iconfonts,"Arial Black",arial;}
-#openwin .close.white{ background: url(../images/close-white.png) no-repeat;}
+    #openwin .close.white {
+        background: url(../../images/achievementShow/close-white.png) no-repeat;
+    }
 #openwin .close.blank{ background: url(../images/close-blank.png) no-repeat;}
 /*滚动条*/
 #ScrollMain{ width:100%;overflow:hidden;}
@@ -360,16 +362,26 @@ em{font-style:normal;}
 .banner-slide .prev, .banner-slide .next {display: block; position:absolute; top:0; width:62px; height:500px; z-index:20; font-size:0; line-height:0; cursor:pointer;}
 .banner-slide .prev {
     left: 0;
-    background: url('../images/prev.png') no-repeat left center;
+    background: url('../../images/achievementShow/prev.png') no-repeat left center;
 }
-.banner-slide .next {right:0; background:url('../images/next.png') no-repeat left center;}
+.banner-slide .next {
+    right: 0;
+    background: url('../../images/achievementShow/next.png') no-repeat left center;
+}
 .banner-slide ul.photolist li{display:block; position:absolute; width: 100%; height:500px; text-align:center; background-repeat:no-repeat; text-transform:uppercase;background-position: 100% 100%;}
 .banner-slide ul.photolist li a { display:block; width:100%; height:100%;}
 .banner-slide ul.photolist li img{ max-width:100%; max-height:500px;}
 .banner-slide ul.photolist li p{ position:absolute; text-align:center; line-height:20px; left:0; bottom:42px; width:100%; z-index:2; font-size:14px; color:#A8A8A8;}
 .banner-slide ul.photolist li p strong{ display:block; height:46px; line-height:46px; color:#FFF;  font-size:30px;}
 .banner_icon{position: absolute; bottom:20px; left:0; width:100%; height:6px; z-index:10; font-size:0; line-height:0; text-align:center;}
-.banner_icon span { cursor:pointer;display:inline-block;width:40px;height: 6px;margin:0 5px;/*border-radius: 50%;text-align:center; background:#FFF; color:#FFF;*/ background: url(../images/scroll-btn.png) -50px 0 no-repeat;}
+    .banner_icon span {
+        cursor: pointer;
+        display: inline-block;
+        width: 40px;
+        height: 6px;
+        margin: 0 5px; /*border-radius: 50%;text-align:center; background:#FFF; color:#FFF;*/
+        background: url(../../images/achievementShow/scroll-btn.png) -50px 0 no-repeat;
+    }
 .banner_icon span.active{/*background:#23DBDB; color:#23DBDB;*/ background-position: 0 0;}
 
 /*专家队伍详细*/

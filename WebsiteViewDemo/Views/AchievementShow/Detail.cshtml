@@ -1,5 +1,74 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = null;
 }
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>埃塞俄比亚国家电信大楼</title>
+    <link href="~/css/common/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color:transparent; background:none;">
+    <div id="openwin">
+        <div class="boxes case-showbox">
+            <div onclick="parent.HideWindow();" title="关闭" class="close white"></div>
+            <div class=" clearfix">
+                <div class="case-showleft">
+                    <div class="case-showmain">
+                        <div class="case-tit">
+                            <h3>埃塞俄比亚国家电信大楼</h3>
+                        </div>
+                        <div id="ScrollMain">
+                            <div class="case-tit">
+                                <p class="color-grey">项目类别</p>
+                                <p>建筑设计类 | 商业办公</p>
+                            </div>
+                            <div class="case-detail">
+                                项目地点：埃塞俄比亚·亚的斯亚贝巴·IT Park<br> 建筑面积：12.5万㎡<br> 设计时间：2016-2017年<br> <br>本项目是埃塞俄比亚国家电讯公司的新的办公大楼（简称ETC），是埃塞俄比亚最早的国家公司之一，成立于1894年，垄断着埃塞的电信行业。ETC拥有近2000万手机用户和500万固话用户，相较于埃塞上亿的人口，成长空间巨大，是埃塞俄比亚国家重点项目。<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-showright">
+                    <div class="casephoto">
+                        <div class="banner-slide main-slide">
+                            <a class="prev" href="javascript:;">prev</a>
+                            <a class="next" href="javascript:;">next</a>
+                            <ul class="photolist">
+
+                                <li class="slide-item" style="display: none;"><img src="~/images/achievementShow/20171107031455290.jpg" style="margin-top: 0px;"></li>
+
+                                <li class="slide-item" style="display: block; opacity: 0.879181;"><img src="~/images/achievementShow/20171107031435230.jpg" style="margin-top: 0px;"></li>
+
+                                <li class="slide-item" style="display: block; opacity: 0.120819;"><img src="~/images/achievementShow/20171107030649553.jpg" style="margin-top: 55.5px;"></li>
+
+                                <li class="slide-item" style="display: none;"><img src="~/images/achievementShow/20171107030618560.jpg" style="margin-top: 46.5px;"></li>
+
+
+                            </ul>
+                            <div class="banner_icon">
+
+                                <span class="trigger-item">1</span>
+
+                                <span class="trigger-item">2</span>
+
+                                <span class="trigger-item active">3</span>
+
+                                <span class="trigger-item">4</span>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="~/js/common/jquery.js"></script>
+    <script type="text/javascript" src="~/js/achievementShow/jsScroll.js"></script>
+    <script type="text/javascript" src="~/js/achievementShow/photoscroll.js"></script>
+    <script>	    $(function () { jsScroll(document.getElementById('ScrollMain'), 10, 'ScrollBar', $("#ScrollMain").width() - 20); })</script>
+
+</body>
+</html>
