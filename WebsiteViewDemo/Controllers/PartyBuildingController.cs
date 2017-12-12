@@ -17,7 +17,6 @@ namespace Dawu.Site.Controllers
         /// <returns></returns>
         public IActionResult Index(int type)
         {
-            //todo 需要换tab active
             return View();
         }
     }
