@@ -43,6 +43,6 @@ function goToTop() { //返回顶部
         	_top_case=12;
         }
         $('div.navlist').stop().animate({ top: _top });
-        $("#CaseMainNav").stop().animate({ top: _top_case });
+        //$("#CaseMainNav").stop().animate({ top: _top_case });
     });
 }
