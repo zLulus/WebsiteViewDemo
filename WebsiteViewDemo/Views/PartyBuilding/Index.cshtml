@@ -26,8 +26,68 @@
                 </ul>
             </div>
             <div class="banner_sjzx">
-                <img src="~/images/partyBuilding/sort_20151216115918537.jpg" class="banner_sjzx_small">
+                <a class="prev" href="javascript:;">prev</a>
+                <a class="next" href="javascript:;">next</a>
+                <ul class="photolist-2">
+
+                    <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/partyBuilding/sort_20151216115918537.jpg" style="margin-top: 0px;" /></li>
+                    <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/partyBuilding/sort_20151216115918537.jpg" style="margin-top: 0px;" /></li>
+                    <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/partyBuilding/sort_20151216115918537.jpg" style="margin-top: 0px;" /></li>
+                    <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/partyBuilding/sort_20151216115918537.jpg" style="margin-top: 0px;" /></li>
+                    @*<li class="slide-item" style="display: block; opacity: 0.879181;"><img class="banner_sjzx_small" src="~/images/achievementShow/20171107031435230.jpg" style="margin-top: 0px;" /></li>
+
+                    <li class="slide-item" style="display: block; opacity: 0.120819;"><img class="banner_sjzx_small" src="~/images/achievementShow/20171107030649553.jpg" style="margin-top: 55.5px;" /></li>
+
+                    <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/achievementShow/20171107030618560.jpg" style="margin-top: 46.5px;" /></li>*@
+
+
+                </ul>
+                <div class="banner_icon-2">
+
+                    <span class="trigger-item">1</span>
+
+                    <span class="trigger-item">2</span>
+
+                    <span class="trigger-item active">3</span>
+
+                    <span class="trigger-item">4</span>
+
+
+                </div>
+                @*<img src="~/images/partyBuilding/sort_20151216115918537.jpg" class="banner_sjzx_small">*@
             </div>
+            @*<div class="case-showright-2">
+                <div class="casephoto-2">
+                    <div class="banner-slide-2 main-slide">
+                        <a class="prev" href="javascript:;">prev</a>
+                        <a class="next" href="javascript:;">next</a>
+                        <ul class="photolist-2">
+
+                            <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/partyBuilding/sort_20151216115918537.jpg" style="margin-top: 0px;" /></li>
+
+                            <li class="slide-item" style="display: block; opacity: 0.879181;"><img class="banner_sjzx_small" src="~/images/achievementShow/20171107031435230.jpg" style="margin-top: 0px;" /></li>
+
+                            <li class="slide-item" style="display: block; opacity: 0.120819;"><img class="banner_sjzx_small" src="~/images/achievementShow/20171107030649553.jpg" style="margin-top: 55.5px;" /></li>
+
+                            <li class="slide-item" style="display: none;"><img class="banner_sjzx_small" src="~/images/achievementShow/20171107030618560.jpg" style="margin-top: 46.5px;" /></li>
+
+
+                        </ul>
+                        <div class="banner_icon-2">
+
+                            <span class="trigger-item">1</span>
+
+                            <span class="trigger-item">2</span>
+
+                            <span class="trigger-item active">3</span>
+
+                            <span class="trigger-item">4</span>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>*@
             <div class="sjzx-subname">党支部建设</div>
         </div>
 
@@ -86,6 +146,9 @@
 
 <script type="text/javascript" src="~/js/partyBuilding/slider.js"></script>
 <script type="text/javascript" src="~/js/partyBuilding/jquery-scrollable.js"></script>
+<script type="text/javascript" src="~/js/achievementShow/jsScroll.js"></script>
+<script type="text/javascript" src="~/js/achievementShow/photoscroll.js"></script>
+<script>	    $(function () { jsScroll(document.getElementById('ScrollMain'), 10, 'ScrollBar', $("#ScrollMain").width() - 20); })</script>
 <script type="text/javascript">
     var team_times = $("#teamscoll li").length * 3000
     $("#teamscoll").scrollable({
