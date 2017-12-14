@@ -522,43 +522,50 @@ em{font-style:normal;}
 
 
 /*党团建设*/
-.case-showright-2 {
-    width: 100%;
-    height: 345px;
-    position: relative;
-    background: #000000;
-}
-.casephoto-2 {
+.casephoto2 {
     width: 100%;
     height: 345px;
     position: relative;
     overflow: hidden;
 }
-.banner-slide-2 .prev, .banner-slide-2 .next {
+
+.banner-slide2 .prev {
     display: block;
-    position: absolute;
+    position:absolute;
     top: 0;
     width: 62px;
     height: 345px;
     z-index: 20;
     font-size: 0;
     line-height: 0;
+    padding:0px 500px 0px 0px;
     cursor: pointer;
 }
 
-.banner-slide-2 .prev {
-    width:50px;
-    height:50px;
+.banner-slide2 .next {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 62px;
+    height: 500px;
+    z-index: 20;
+    font-size: 0;
+    line-height: 0;
+    padding: 0px 0px 0px 50px;
+    cursor: pointer;
+}
+
+.banner-slide2 .prev {
     left: 0;
     background: url('../../images/achievementShow/prev.png') no-repeat left center;
 }
 
-.banner-slide-2 .next {
+.banner-slide2 .next {
     right: 0;
     background: url('../../images/achievementShow/next.png') no-repeat left center;
 }
 
-.banner-slide-2 ul.photolist-2 li {
+.banner-slide2 ul.photolist2 li {
     display: block;
     position: absolute;
     width: 100%;
@@ -569,40 +576,30 @@ em{font-style:normal;}
     background-position: 100% 100%;
 }
 
-    .banner-slide-2 ul.photolist-2 li a {
+    .banner-slide2 ul.photolist2 li a {
         display: block;
         width: 100%;
         height: 100%;
     }
 
-    .banner-slide-2 ul.photolist-2 li img {
+    .banner-slide2 ul.photolist2 li img {
         max-width: 100%;
-        height: 345px;
+        max-height: 345px;
     }
 
-        .banner-slide-2 ul.photolist-2 li img.banner_sjzx_small {
-            position: absolute;
-            top: 41px;
-            right: 50px;
-            width: 614px;
-            height: 345px;
-            z-index: 1;
-            border: #d8d8d8 2px solid;
-        }
-
-    .banner-slide-2 ul.photolist-2 li p {
+    .banner-slide2 ul.photolist2 li p {
         position: absolute;
         text-align: center;
         line-height: 20px;
         left: 0;
-        top: 41px;
+        bottom: 42px;
         width: 100%;
         z-index: 2;
         font-size: 14px;
         color: #A8A8A8;
     }
 
-        .banner-slide-2 ul.photolist-2 li p strong {
+        .banner-slide2 ul.photolist2 li p strong {
             display: block;
             height: 46px;
             line-height: 46px;
@@ -610,7 +607,7 @@ em{font-style:normal;}
             font-size: 30px;
         }
 
-.banner_icon-2 {
+.banner_icon2 {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -622,7 +619,7 @@ em{font-style:normal;}
     text-align: center;
 }
 
-    .banner_icon-2 span {
+    .banner_icon2 span {
         cursor: pointer;
         display: inline-block;
         width: 40px;
@@ -631,6 +628,6 @@ em{font-style:normal;}
         background: url(../../images/achievementShow/scroll-btn.png) -50px 0 no-repeat;
     }
 
-        .banner_icon-2 span.active { /*background:#23DBDB; color:#23DBDB;*/
+        .banner_icon2 span.active { /*background:#23DBDB; color:#23DBDB;*/
             background-position: 0 0;
         }
