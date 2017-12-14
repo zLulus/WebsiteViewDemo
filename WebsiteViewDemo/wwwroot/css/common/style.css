@@ -314,7 +314,7 @@ em{font-style:normal;}
 .casescoll .aright{ right:-20px}
 
 /*案例列表*/
-.casebox{ padding:12px 30px 0 203px; position: relative; min-height: 568px;}
+.casebox{ padding:12px 30px 0 30px; position: relative; min-height: 568px;}
 .casebox .case-class{ position: absolute; left: 12px; top: 12px; padding: 6px; width: 156px; background: #d8d8d8;}
 .casebox .case-class li{ margin-top: 4px; height:66px; padding:0 12px; line-height: 34px; font-weight: bold; color: #303030; text-align: right; overflow: hidden; background-color: #ffffff; background-position: 0 0; background-repeat: no-repeat;}
 .casebox .case-class li:hover{ background-color:#f0f0f0; color: #303030;}
@@ -328,17 +328,24 @@ em{font-style:normal;}
 .nextmenu li a{ display: inline-block; padding: 0 7px; height: 32px;}
 .nextmenu li:hover,.nextmenu li.active{ border-color: #E61016; font-weight: bold; line-height: 32px;}
 .caselist{ padding-top: 24px;}
-.caselist li{ float: left; width: 260px; height: 200px; margin-right: 15px;margin-bottom: 15px; position: relative;}
-.caselist li img{width: 260px; height: 200px;}
+    .caselist li {
+        float: left;
+        width: 280px;
+        height: 200px;
+        margin-right: 25px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+.caselist li img{width: 280px; height: 200px;}
     .caselist li .lay {
         display: none;
         position: absolute;
         left: 0;
         top: 0;
         z-index: 1;
-        width: 240px;
+        width: 280px;
         height: 130px;
-        padding: 70px 10px 0 10px;
+        padding: 70px 0px 0px 0px;
         text-align: center;
         background: url(../../images/tm.png);
         font-size: 12px;
